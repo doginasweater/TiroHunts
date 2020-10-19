@@ -10,7 +10,7 @@ module.exports = {
     "react"
   ],
   extends: [
-    "eslint:reccommended",
+    "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
     "plugin:jsx-a11y/recommended"

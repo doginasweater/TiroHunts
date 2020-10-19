@@ -15,8 +15,8 @@ const renderApp = (r: JSX.Element) => {
 renderApp(routes);
 
 if (module.hot) {
-  module.hot.accept('./route', () => {
-    const { routes } = require('./route');
+  module.hot.accept('./route', async () => {
+    const { routes } = await import('./route');
 
     renderApp(routes);
   });
